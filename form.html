@@ -8,9 +8,20 @@
     <!--Linkando bootstrap para uso de icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!--Estilização do formulário-->
     <link rel="stylesheet" href="form/form.css">
     
+    <!--Estilização da navbar-->
+    <link rel="stylesheet" href="universal/navbar.css">
+
     <script src="form/form.js" defer></script>
+
+    <style>
+        form h1 {
+            text-align: center;
+            margin-bottom: 1.2rem; /*ESTILIZAÇÃO INTERNAL*/
+        }
+    </style>
 
 </head>
 <body>
@@ -29,7 +40,7 @@
 
     <form id="cadastroForm">
 
-        <h1>Login de Usuário</h1>
+        <h1 style="color: #A400EB;">Login de Usuário</h1> <!--ESTILIZAÇÃO INLINE-->
 
         <label for="nomeCompleto">Nome completo:</label>
         <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Cristiano Ronaldo" required><br>
@@ -57,6 +68,6 @@
 
     <div id="resultado"></div>
 
-    <script src="home.js"></script>
+    <script src="universal/navbar.js"></script>
 </body>
 </html>

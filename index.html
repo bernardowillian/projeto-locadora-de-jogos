@@ -8,14 +8,18 @@
     <!--Linkando bootstrap para uso de icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!--Estilização da home-->
     <link rel="stylesheet" href="home.css">
+
+    <!--Estilização da navbar-->
+    <link rel="stylesheet" href="universal/navbar.css">
 
 </head>
 <body>
     <div class="topnav" id="myTopnav">
         <a class="logo" href="#"><i class="bi bi-joystick"></i> B.w Jogos</a> 
         <a class="active" href="#"><i class="bi bi-house"></i> Home</a>
-        <a href="#"><i class="bi bi-controller"></i> Jogos</a>
+        <a href="jogos.html"><i class="bi bi-controller"></i> Jogos</a>
         <a href="form.html"><i class="bi bi-person"></i> Login</a>
         <a href="#"><i class="bi bi-info-circle"></i> Sobre</a>
 
@@ -28,8 +32,49 @@
         <video id="video" src="imgs/pixel-art-animation.mp4" autoplay loop></video>
     </section>
 
-    <h2>Vai toma no cu</h2>
+    <h1 class="title">Locadora de Jogos</h1>
 
-    <script src="home.js"></script>
+    <h2 class="title">Tabela de preços</h2>
+
+    <div class="price-table">
+        <table class="table" style="color: #fff;"> <!--ESTILIZAÇÃO INLINE-->
+            <tr>
+                <th>Aluguel</th>
+                <th>PS5</th>
+                <th>Xbox</th>
+                <th>Nintendo</th>
+                <th>PS4</th>
+            </tr>
+            <tr>
+                <td>1 dia</td>
+                <td>5,00</td>
+                <td>4,00</td>
+                <td>5,00</td>
+                <td>4,00</td>
+            </tr>
+            <tr>
+                <td>3 dia</td>
+                <td>12,00</td>
+                <td>10,00</td>
+                <td>12,00</td>
+                <td>10,00</td>
+            </tr>
+            <tr>
+                <td>7 dias</td>
+                <td>32,00</td>
+                <td>25,00</td>
+                <td>32,00</td>
+                <td>25,00</td>
+            </tr>
+            <tr>
+                <td>10 dias</td>
+                <td>45,00</td>
+                <td>35,00</td>
+                <td>45,00</td>
+                <td>35,00</td>
+            </tr>
+        </table>
+    </div>
+    <script src="universal/navbar.js"></script>
 </body>
 </html>

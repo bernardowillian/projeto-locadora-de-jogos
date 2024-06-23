@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+
+    <!--Linkando bootstrap para uso de icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="universal/navbar.css">
+
+    <style> /*ESTILIZAÇÃO INTERNAL*/
+        .product-list {
+            list-style-type: none;
+            padding-top: 4rem !important;
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            justify-content: center; /* Centralizar os itens dentro da lista */
+            max-width: 1200px; /* Limita a largura máxima da lista */
+        }
+
+        .product-item {
+            background-color: #670392;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            width: calc(33.333% - 2rem); /* Três produtos por linha com margem de 2 rem */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 0.6rem 0;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .product-item {
+                width: calc(50% - 2rem); /* Dois produtos por linha em telas menores */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-item {
+                width: 100%; /* Um produto por linha em telas menores */
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a class="logo" href="#"><i class="bi bi-joystick"></i> B.w Jogos</a> 
+        <a href="index.html"><i class="bi bi-house"></i> Home</a>
+        <a class="active" href="jogos.html"><i class="bi bi-controller"></i> Jogos</a>
+        <a href="form.html"><i class="bi bi-person"></i> Login</a>
+        <a href="#"><i class="bi bi-info-circle"></i> Sobre</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="bi bi-justify"></i>
+        </a>
+    </div>
+
+    <ul class="product-list">
+        <li class="product-item">
+            <img src="imgs/ps5.jpg" alt="Produto 1" class="product-image">
+            <h2>Playstation 5</h2>
+            <p>Garanta sua experiência com os exclusivos do playstation 5!</p>
+        </li>
+        <li class="product-item">
+            <img src="imgs/xbox.jpg" alt="Produto 2" class="product-image">
+            <h2>Xbox</h2>
+            <p>Desfrute dos melhores games no seu Xbox!</p>
+        </li>
+        <li class="product-item">
+            <img src="imgs/nintendo.jpg" alt="Produto 3" class="product-image">
+            <h2>Nintendo</h2>
+            <p>It's a me, Mario!</p>
+        </li>
+        <li class="product-item">
+            <img src="imgs/ps4.jpg" alt="Produto 3" class="product-image">
+            <h2>Playstation 4</h2>
+            <p>Diversão garantida no seu playstation 4!</p>
+        </li>
+    </ul>
+
+    <script src="universal/navbar.js"></script>
+</body>
+</html>
