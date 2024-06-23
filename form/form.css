@@ -86,7 +86,7 @@ form button#cancelarBtn:hover {
 
 @media screen and (max-width: 600px) {
     form {
-        padding: 15px;
+        padding: 0.9rem;
     }
 
     form div {
@@ -94,7 +94,7 @@ form button#cancelarBtn:hover {
     }
 
     form button {
-        margin-bottom: 10px;
+        margin-bottom: 0.6rem;
         width: 100%;
     }
 
