@@ -48,6 +48,31 @@ th {
     background-color: #555; 
 }
 
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.2rem 0;
+    text-align: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+footer h5 {
+    color: var(--purple);
+    margin-bottom: 0.5rem;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0.9rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: var(--purple);
+}
+
 @media (max-width: 768px) { /* Ajuste o video para celular */
     #video {
         height: auto;
@@ -60,5 +85,15 @@ th {
 
     .table {
         font-size: 0.46rem; /* Ajusta o tamanho da fonte para dispositivos menores */
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        border-radius: 0.5rem;
+    }
+    footer .social-icons a {
+        font-size: 1.25rem;
+        margin: 0 0.6rem;
     }
 }
