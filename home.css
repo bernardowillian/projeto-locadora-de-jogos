@@ -37,11 +37,6 @@
     font-size: 1.1rem;
 }
 
-/*.topnav a:hover {
-    background-color: var(--purple);
-    color: #fff;
-}*/
-
 .topnav a.active {
     /*background-color: var(--purple);*/
     color: var(--purple);
@@ -96,7 +91,7 @@ body {
     }
 }
 
-@media (max-width: 768px) { /* Ajuste para dispositivos móveis */
+@media (max-width: 768px) { /* Ajuste o video para celular */
     #video {
         height: auto;
         max-width: 100%;
