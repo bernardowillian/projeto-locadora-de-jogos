@@ -33,7 +33,7 @@
 .table {
     width: 80%;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-collapse: collapse;
     margin: 2rem auto;
 }
@@ -54,7 +54,11 @@ th {
         max-width: 100%;
     }
 
+    .title {
+        font-size: 1.2rem;
+    }
+
     .table {
-        font-size: 0.9rem; /* Ajusta o tamanho da fonte para dispositivos menores */
+        font-size: 0.46rem; /* Ajusta o tamanho da fonte para dispositivos menores */
     }
 }

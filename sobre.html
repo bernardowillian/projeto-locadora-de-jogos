@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+
+    <!--Linkando bootstrap para uso de icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="universal/navbar.css">
+
+    <style>
+        main {
+            margin-top: 3.5rem;
+        }
+
+        .sobre {
+            max-width: 800px;
+            margin: 1.2rem auto;
+            background-color: #670392;
+            padding: 1.2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            color: #fff;
+        }
+
+        .sobre h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .qualidades {
+            list-style: decimal inside;
+            padding: 0;
+        }
+
+        .qualidades li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 0.6rem;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 600px) {
+            .qualidades li {
+                margin-bottom: 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a class="logo" href="#"><i class="bi bi-joystick"></i> B.w Jogos</a> 
+        <a href="index.html"><i class="bi bi-house"></i> Home</a>
+        <a href="jogos.html"><i class="bi bi-controller"></i> Jogos</a>
+        <a href="form.html"><i class="bi bi-person"></i> Login</a>
+        <a class="active" href="sobre.html"><i class="bi bi-info-circle"></i> Sobre</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="bi bi-justify"></i>
+        </a>
+    </div>
+
+    <main>
+        <section class="sobre">
+            <h2>Sobre Nós</h2>
+            <ol class="qualidades">
+                <li>Mais confiável</li>   <!--LISTA ORDENADA-->
+                <li>Melhores preços</li>
+                <li>Atendimento ao cliente excepcional</li>
+                <li>Grande variedade de jogos</li>
+                <li>Facilidade de aluguel</li>
+            </ol>
+        </section>
+    </main>
+
+    <script src="universal/navbar.js"></script>
+</body>
+</html>

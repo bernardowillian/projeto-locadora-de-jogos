@@ -20,6 +20,10 @@ form, #resultado {
     margin: 3.5rem auto; /* Centralizar o formulário horizontalmente*/
 }
 
+#resultado {
+    font-family: none;
+}
+
 form label {
     display: block;
     margin-bottom: 0.3rem;
